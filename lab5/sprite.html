@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/x3dom.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/customCoke.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/fec946029a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/x3dom.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar_coca_cola">
+      <div class="container">
+        <!-- Brand -->
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+          <h1>1</h1>
+          <h1>oca</h1>
+          <h2>Cola</h2>
+          <h3>Journey</h3>
+          <p>Refreshing the world, one story at a time</p>
+          </a>
+          </div>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Drinks
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Coca Cola</a>
+                <a class="dropdown-item" href="#">Sprite</a>
+                <a class="dropdown-item" href="#">Dr Pepper</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="container main_contents">
+      <div class="row">
+        <div class="col-sm-10">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="coke.html">Coke</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="sprite.html">Sprite</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="pepper.html">Dr. Pepper</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="model3D">
+                <x3d>
+                    <scene>
+                        <inline url="assets/models/sprite.x3d"></inline>
+                    </scene>
+                </x3d>
+            </div>
+            <h2 class="card-title">Sprite X3D Model</h2>
+            <p class="card-text">This X3D model of the sprite bottle has been created in blender and exported to X3D.</p>
+            <h5 class="card-subtitle">Camera Views</h5>
+            <div class="camera-btns">
+              <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card text-left">
+            <div class="card-header">
+              <p>Gallery</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">3D Image Gallery</h5>
+              <a href="coke.html">
+                <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg" alt="Coca Cola">
+              </a>
+              <a href="sprite.html">
+                <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
+              </a>
+              <a href="pepper.html">
+                <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg" alt="Dr. Pepper">
+              </a>
+              <p class="card-text">These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are rendered in blender.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <a href="#">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Coca Cola</h3>
+              <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done,
+                the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special!</p>
+                <a href="https://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Find out more ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Footer -->
+    <nav class="navbar navbar-expand-sm navbar_coca_cola">
+      <div class="container">
+        <div class="navbar-text float-left copyright">
+          <p><span class="align-baseline"></span>&copy 2019 Mobile Web 3D Applications </span></p>
+        </div>
+        <div class="navbar-text float-right social">
+          <a href="#"><i class="fab fa-facebook-square fa-2x" style="font-size: 20px; color: white;"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x" style="font-size: 20px; color: white;"></i></a>
+          <a href="#"><i class="fab fa-google-plus fa-2x" style="font-size: 20px; color: white;"></i></a>
+          <a href="#"><i class="fab fa-github-square fa-2x" style="font-size: 20px; color: white;"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+  <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css"></link>
+</html>
